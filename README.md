@@ -62,6 +62,9 @@ And, a prediction of Task-2,
 </p>
 
 ### Task 3
+
+Our network achieves a mIoU of  **64.32**  on the  [Cityscapes](https://www.cityscapes-dataset.com/)  val set without any pretrained model. And for an input resolution of 2048x1024, our network can run at the speed of  **21.8 FPS**  on a single RTX 2070 GPU.
+
 Model architecture of Task 3,
  
  <p align="center">

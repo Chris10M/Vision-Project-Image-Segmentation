@@ -236,7 +236,7 @@ def main(args):
 
     loaded_model = torch.load(saved_path, map_location=torch.device('cuda') if torch.cuda.is_available() else 'cpu')
     state_dict = loaded_model['state_dict']
-    net.load_state_dict(state_dict, strict=True)
+    net.load_state_dict(state_dict, strict=False)
 
     if torch.cuda.is_available():
         net.cuda()

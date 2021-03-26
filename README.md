@@ -34,7 +34,7 @@ Both the tasks use the same framework with changes only to the model architectur
 ### Train
 To train the model,  we run train.py
 ```
-python3 train.py --root Cityscapes_root_directory --model_path optional_param, to train from a checkpoint.
+python3 train.py --root Cityscapes_root_directory --model_path optional_param, to resume training from a checkpoint.
 ``` 
 ### Evaluate
 The trainer, also evaluates the model for every save and logs the results, but if evaluation needs to be done for a particular model, we run evaluate.py

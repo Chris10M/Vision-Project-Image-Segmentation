@@ -1,0 +1,11 @@
+torchstat==0.0.7
+tabulate==0.8.9
+torch==1.7.1+cu110
+opencv_contrib_python==4.5.1.48
+imutils==0.5.4
+tqdm==4.58.0
+numpy==1.19.5
+torchvision==0.8.2+cu110
+Pillow==8.1.2
+scikit_learn==0.24.1
+

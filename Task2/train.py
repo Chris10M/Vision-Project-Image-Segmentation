@@ -122,7 +122,7 @@ def main(args):
             start_training = True
 
         outs = net(im)
-        if isinstance(outs, tuple):
+        if isinstance(outs, tuple):  # Depending on the model, AuxLoss may be also computed.
             out, aux_loss_1, aux_loss_2 = outs
             loss = criteria(out, lb) + 0.4 * criteria(aux_loss_1, lb) + 0.6 * criteria(aux_loss_2, lb)
         else:
@@ -133,7 +133,7 @@ def main(args):
 
         loss.backward()
 
-        if it % optim_iter == 0:
+        if it % optim_iter == 0:  # we optimize the loss only for every optim_iter. This done to mimic the increase in batch size.
             optim.step()
             optim.zero_grad()
 

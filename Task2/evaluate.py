@@ -47,7 +47,7 @@ class Evaluate:
 
         self.append_class_wise_similarity(lb_flat, preds_flat)
         self.append_class_wise(lb_flat, preds_flat)
-        # self.append_class_wise_ROC(lb_flat, probs)
+        # self.append_class_wise_ROC(lb_flat, probs)  # we are not computing, as it takes very long to compute.
 
         self.steps += 1
 

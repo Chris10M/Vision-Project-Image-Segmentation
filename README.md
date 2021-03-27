@@ -1,7 +1,7 @@
 
-# Real-time Segmentation - A Study of Approaches
+# Real-time Segmentation - A Study of Approaches [[PDF](NN_Project_Segmentation_Report.pdf)]
  
-This repository contains the code for Segmentation Project for the completion of the course, Neural Networks: Theory and Implementation (Winter 2020/2021). 
+This repository contains the code for Segmentation Project to fullfil the completion of the course, Neural Networks: Theory and Implementation (Winter 2020/2021). 
 
 
 ## Requirements

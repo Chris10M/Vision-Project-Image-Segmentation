@@ -1,3 +1,17 @@
+"""
+The evaluate.py needs two arguments,
+--root       (compulsary) - root directory of Cityscapes 
+--model_path (compulsary) - path of the saved_model  
+
+
+The trained model is evaluated on Cityscapes validation dataset. The metrics we calculate are,
+accuracy, f1-score, sensitivity, jaccardSimilarity, diceScore, IoU.
+
+We use the gt with label 255 as negative and 0-19 are postivies for all metrics except IoU. FN - (gt == 255) and (pred in (0-19)). 
+While for Iou, we ignore the 255, and calculate with 0-19 classes only. This is done to ensure the results can be compared with other 
+networks for Cityscapes.   
+"""
+
 import torch
 import collections
 import torch.nn.functional as F

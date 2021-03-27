@@ -1,8 +1,17 @@
+"""
+To visualize the results, demo.py needs two arguments,
+--root       (compulsary) - root directory of Cityscapes 
+--model_path (compulsary) - path of the saved_model  
+
+Press 'q' to quit the demo.
+Press any key to visualize the next image.   
+"""
+
+
 import torch
 import numpy as np
 import cv2
 import imutils
-
 
 from torch.utils.data import DataLoader
 from cityscapes import CityScapes

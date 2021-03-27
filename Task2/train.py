@@ -1,3 +1,14 @@
+"""
+The train.py needs two arguments,
+--root     (compulsary) - root directory of Cityscapes 
+--model_path (optional) - model_path to resume training from a checkpoint
+
+The trained model is evaluated and saved for every save_iter. The logs and model configuration are saved in savedmodels/
+with the hash of the model as the base_folder. This helps us to track different models. 
+
+We only optimize the loss for every optim_iter, this mimics increase in the batchsize. 
+"""
+
 from logger import setup_logger
 import torch.multiprocessing as mp
 from model import model

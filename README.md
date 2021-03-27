@@ -21,7 +21,7 @@ The network is an efficient-net-b0,  along with PSP module.
 
 <p align="center">
 <img src="images/task1/task1.png" alt="task1" width="500"/></br>
-</p>s 
+</p>
 
 <p align="center">
 <img src="images/task1/metric.png" alt="task1-metric" width="600"/></br>

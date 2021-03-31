@@ -17,7 +17,7 @@ The notebook,  [Vision_task_1.ipynb](https://github.com/Chris10M/Vision-Project-
 
 ### Overview 
 We evaluate the model with [PASCAL VOC 2012](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/). 
-The network is an efficient-net-b0,  along with PSP module. 
+The network is an mobilenet-v3,  along with PSP module. 
 
 <p align="center">
 <img src="images/task1/task1.png" alt="task1" width="500"/></br>
